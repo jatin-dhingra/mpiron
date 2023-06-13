@@ -1,0 +1,178 @@
+.contact
+{
+  
+  position: relative;
+  min-height: 100vh;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  margin-top: 0;
+  
+}
+
+.contact .content
+{
+  max-width: 800px;
+  text-align: center;
+
+}
+
+.contact .content h2{
+  font-size: 3em;
+  font-weight: bolder;
+  color: white;
+}
+
+.containerbox
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.containerbox .contactinfo
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerbox .contactinfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.containerbox .contactinfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+
+}
+
+.containerbox .contactinfo .box .text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+}
+
+.containerbox .contactinfo .box h3{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f09d51;
+}
+
+.contactform
+{
+    width: 40%;
+    padding: 40px;
+    background: white;
+    border-radius:10px;
+}
+
+
+.contactform h2
+{
+   font-size: 30px;
+   color: #333;
+   font-weight: 500;
+}
+
+.contactform .inputbox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+  width: 100%;
+  padding: 5px 0;
+
+  font-size: 16px;
+  margin: 10px 0;
+  border:  none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactform .inputbox span
+{
+  position:absolute;
+  left: 0;
+  padding: 5px 0;
+
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: .5s;
+  color: #666;
+
+}
+
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+  color: #e91;
+  font-size: 12px;
+  transform: translateY(-20px);
+
+}
+
+
+.contactform .inputbox input[type="submit"]
+{
+  width: 100px;
+  background: #f09d51;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+
+@media (max-width:990px)
+{
+  .contact
+  {
+    padding: 50px;
+
+  }
+  .containerbox
+  {
+    flex-direction: column;
+
+  }
+  .containerbox .contactinfo
+  {
+    margin-bottom: 40px;
+  }
+  .containerbox .contactinfo,
+  .contactform
+  {
+      width: 100%;
+  }
+
+}
