@@ -31,6 +31,10 @@ const Testimonial = () => {
     {
       content:"MP Iron offers exceptional quality shutters and plant stands. Owner Mr. Harish provides professional service, combining security, elegance, and charm, making the buying experience delightful.",
       author:"Ravi Bhutani"
+    },
+    {
+      content:"",
+      author:"Ravi Bhutani"
     }
   ]
 
@@ -58,7 +62,7 @@ const Testimonial = () => {
     <React.Fragment>
       <Lineleft/>
       <h1>Testimonials</h1>
-      <div className='testimonial'>
+      <div className='testimonial' >
        
         <div onClick={previous} className='arrow'><FiArrowLeft/></div>
         <div
